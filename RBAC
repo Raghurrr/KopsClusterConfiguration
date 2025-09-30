@@ -39,3 +39,12 @@ rules:
 - apiGroups: [""]
   resources: ["pods"]
   verbs: ["get", "watch", "list"]
+
+
+
+
+
+                                                              Testing the RBAC
+                                                           =========================
+
+                                    kubectl auth can-i list pods --as=system:serviceaccount:dev:dev-user -n dev
