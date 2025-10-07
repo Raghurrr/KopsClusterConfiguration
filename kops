@@ -30,3 +30,8 @@ kops create cluster \
      kops update cluster --name reyaz.k8s.local --yes --admin
      kops validate cluster --wait 10m
 
+
+
+=====================================================================================================================================================================
+kops create cluster   --name=raghu.k8s.local   --zones=ap-south-1a   --control-plane-count=1   --control-plane-size=t3.medium   --node-count=2   --node-size=t3.small   --node-volume-size=20   --control-plane-volume-size=20   --ssh-public-key=/root/.ssh/my-keypair.pub   --image=ami-02d26659fd82cf299   --networking=calico
+
